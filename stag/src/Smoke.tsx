@@ -31,5 +31,11 @@ export const Smoke = () => {
     }, 1000);
   }, []);
 
-  return <canvas ref={ref as any} width={1000} height={1000} />;
+  return (
+    <canvas
+      ref={ref as any}
+      width={window.innerWidth}
+      height={window.innerHeight}
+    />
+  );
 };
